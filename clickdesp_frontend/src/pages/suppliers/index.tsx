@@ -1,12 +1,11 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
-import styles from '@/styles/home.module.scss'
+import styles from '../suppliers/suppliers.module.scss'
 import Heading from '@/components/UI/Heading'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home() {
+export default function Suppliers() {
   return (
     <>
       <Head>
@@ -17,9 +16,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.container}>
-          <Heading 
-          title='Olá 👋 , confira seu dashboard.'
-          subtitle='Confira seus Resultados.'
+          <Heading
+            title='Olá 👋 , confira seus Fornecedores.'
+            subtitle='Confira seus Resultados.'
           />
         </div>
       </main>
