@@ -12,7 +12,7 @@ export function Header() {
           <Image src={logoImg} alt="Logo clickdesp" width={80} />
         </Link>
         <nav className={styles.menuNav}>
-          <Link href="/category" legacyBehavior>
+          <Link href="/client" legacyBehavior>
             <a>Proprietários</a>
           </Link>
           <Link href="/category" legacyBehavior>
