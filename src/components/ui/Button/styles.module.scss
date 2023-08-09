@@ -1,0 +1,36 @@
+.button{
+    max-width: 600px;
+    background-color: var(--green-600);
+    border: 0;
+    padding: 0.4rem;
+    border-radius: 0.5rem;
+    transition: filter 0.3s;
+    font-weight: 500;
+
+    &[disabled]{
+        svg{
+            animation: animate 2s infinite;
+            cursor: not-allowed;
+        }
+
+        color: black;
+    }
+
+    &:hover{
+        filter: brightness(1.10)
+    }
+
+    .buttonText{
+        color: var(--dark-900);
+    }
+
+    @keyframes animate{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+    }
+
+}
